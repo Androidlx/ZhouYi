@@ -6,13 +6,24 @@
     android:layout_height="match_parent"
     tools:context="com.example.lixin.zhoukao1lianxi.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.example.lixin.zhoukao1lianxi.MyCustomView
+        android:id="@+id/customview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        app:center_text="自定义标题"
+        app:center_text_size="12dp"
+        app:center_text_color="#000000"
+        app:center_text_bg="#ff9900"
+
+        app:left_btn_text="返回"
+        app:left_btn_text_size="8dp"
+        app:left_btn_text_color="#000000"
+
+        app:right_btn_text="更多"
+        app:right_btn_text_size="8dp"
+        app:right_btn_text_color="#000000"
+        >
+    </com.example.lixin.zhoukao1lianxi.MyCustomView>
 
 </android.support.constraint.ConstraintLayout>
